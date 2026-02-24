@@ -1,0 +1,14 @@
+[
+  {
+    "id": "paloma",
+    "name": "Paloma",
+    "category": "tequila",
+    "strength": "medium",
+    "flavor": ["citrus", "refreshing"],
+    "ingredients": [
+      { "name": "Tequila", "amount": "2 oz", "color": "#d4af37" },
+      { "name": "Grapefruit Soda", "amount": "Top", "color": "#f8c8dc" },
+      { "name": "Lime Juice", "amount": "0.5 oz", "color": "#a4de02" }
+    ]
+  }
+]
