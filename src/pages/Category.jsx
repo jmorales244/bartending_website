@@ -1,40 +1,55 @@
 import { useParams, useNavigate } from "react-router-dom"
 import { drinks } from "../data/drinks"
-import Card from "../components/ui/Card"
 
 function Category() {
-  const { id } = useParams()
+  const { categoryId } = useParams()
   const navigate = useNavigate()
 
-  const filteredDrinks = drinks.filter(
-    (drink) => drink.category === id
-  )
+  const categoryDrinks = drinks[categoryId] || []
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-10">
+
+      {/* Back Button */}
       <button
         onClick={() => navigate(-1)}
-        className="text-sm text-[var(--color-text-secondary)]"
+        className="text-gray-400 text-sm tracking-widest"
       >
-        ← Back
+        ← BACK
       </button>
 
-      <h2 className="text-3xl font-light tracking-wider capitalize">
-        <div className="w-12 h-[1px] bg-[var(--color-accent)] mt-2 opacity-60">
-            {id}
-        </div>
-      </h2>
+      {/* Title */}
+      <h1 className="text-4xl font-[300] tracking-[0.15em] text-[#f3efe6] capitalize">
+        {categoryId}
+      </h1>
 
-      <div className="grid gap-4">
-        {filteredDrinks.map((drink) => (
-          <Card
-            key={drink.id}
-            onClick={() => navigate(`/drink/${drink.id}`)}
+      {/* Divider */}
+      <div className="w-20 h-[1px] bg-gradient-to-r from-transparent via-[#d4af37] to-transparent opacity-70"></div>
+
+      {/* Drinks */}
+      <div className="space-y-4">
+
+        {categoryDrinks.map((drink) => (
+          <div
+            key={drink}
+            className="
+              bg-gradient-to-br
+              from-[#141414]
+              to-[#0f0f0f]
+              border border-[#1f1f1f]
+              rounded-2xl
+              px-6 py-6
+              active:scale-[0.97]
+              transition-all
+              duration-150
+            "
           >
             {drink.name}
-          </Card>
+          </div>
         ))}
+
       </div>
+
     </div>
   )
 }

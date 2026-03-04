@@ -19,4 +19,16 @@ export const categories = [
     id: "martinis",
     name: "Martinis",
   },
+  {
+    id: "cantarito",
+    name: "Cantarito",
+  },
+  {
+    id: "shots",
+    name: "Shots",
+  },
+  {
+    id: "whisky",
+    name: "Whisky",
+  }
 ]

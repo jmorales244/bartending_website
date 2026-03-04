@@ -8,9 +8,9 @@ function App() {
   return (
     <div className="min-h-screen bg-black">
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/category/:id" element={<Category />} />
-        <Route path="/drink/:id" element={<DrinkPage />} />
+        <Route path="/" element={<Layout><Home /></Layout>} />
+        <Route path="/category/:categoryId" element={<Layout><Category /></Layout>} />
+        <Route path="/drink/:drinkId" element={<Layout><DrinkPage /></Layout>} />
       </Routes>
     </div>
   )

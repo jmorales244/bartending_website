@@ -6,6 +6,24 @@
   --color-surface-hover: #222222;
   --color-text-primary: #e5e5e5;
   --color-text-secondary: #9ca3af;
-  --color-accent: #d4af37; /* gold */
+  --color-accent: #d4af37;
   --color-accent-soft: #f5d76e;
+}
+
+@media (orientation: portrait) {
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  
+  background-color: #0f0f0f;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

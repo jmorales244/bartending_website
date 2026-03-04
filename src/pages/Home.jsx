@@ -6,20 +6,25 @@ function Home() {
   const navigate = useNavigate()
 
   return (
-    <div className="space-y-10">
-      <div className="text-center space-y-3">
-        <h1 className="text-4xl font-light tracking-wider">
+    <div className="relative space-y-12">
+
+      {/* Gold Glow */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-64 bg-[#d4af37] opacity-5 blur-3xl pointer-events-none"></div>
+
+      <div className="text-center space-y-4">
+        <h1 className="text-5xl font-[300] tracking-[0.15em] text-[#f3efe6]">
           AJ Bartending
         </h1>
 
-        <p className="text-[var(--color-text-secondary)] text-sm">
+        <p className="text-gray-400 text-sm tracking-[0.2em] uppercase">
           Choose your spirit
         </p>
 
-        <div className="w-16 h-[1px] bg-[var(--color-accent)] mx-auto opacity-60"></div>
+        {/* Gold Divider */}
+        <div className="w-20 h-[1px] bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto opacity-70"></div>
       </div>
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid gap-6">
         {categories.map((category) => (
           <Card
             key={category.id}
@@ -29,6 +34,7 @@ function Home() {
           </Card>
         ))}
       </div>
+
     </div>
   )
 }

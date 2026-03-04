@@ -1,7 +1,7 @@
 function Layout({ children }) {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#0f0f0f] to-[#141414] text-[var(--color-text-primary)] overflow-x-hidden">
-      <div className="max-w-md mx-auto px-6 py-10 relative">
+    <div className="min-h-[100svh] bg-[#0f0f0f] text-[var(--color-text-primary)] overflow-x-hidden">
+      <div className="max-w-md mx-auto px-6 pt-[calc(env(safe-area-inset-top)+4rem)] pb-8 relative">
         {children}
       </div>
     </div>
