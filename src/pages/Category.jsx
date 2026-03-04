@@ -31,7 +31,8 @@ function Category() {
 
         {categoryDrinks.map((drink) => (
           <div
-            key={drink}
+            key={drink.id}
+            onClick={() => navigate(`/drink/${drink.id}`)}
             className="
               bg-gradient-to-br
               from-[#141414]

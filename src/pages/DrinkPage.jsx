@@ -2,10 +2,11 @@ import { useParams, useNavigate } from "react-router-dom"
 import { drinks } from "../data/drinks"
 
 function DrinkPage() {
-  const { id } = useParams()
+  const { drinkId } = useParams()
   const navigate = useNavigate()
 
-  const drink = drinks.find((d) => d.id === id)
+  const allDrinks = Object.values(drinks).flat()
+  const drink = allDrinks.find((d) => d.id === drinkId)
 
   if (!drink) {
     return <div>Drink not found</div>
