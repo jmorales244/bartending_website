@@ -43,14 +43,14 @@ function Hero() {
 
                     <button
                       onClick={() => navigate("/menu")}
-                      className="px-6 py-3 bg-[#f25f5c] text-white rounded-lg hover:bg-[#e14d4a] transition"
+                      className="px-6 py-3 bg-brand-coral text-black rounded-lg hover:opacity-90 transition"
                     >
-                        View Drink Menu
+                      View Drink Menu
                     </button>
 
                     <button 
                       onClick={() => navigate("/book")}
-                      className="px-6 py-3 border border-gray-300 rounded-lg hover:bg-gray-100 transition"
+                      className="px-6 py-3 bg-brand-gold border border-gray-300 text-black rounded-lg hover:bg-gray-100 transition"
                       >
                         Book Your Event
                       </button>
