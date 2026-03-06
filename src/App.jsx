@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import Category from './pages/Category'
 import DrinkPage from './pages/DrinkPage'
 import Menu from "./pages/Menu"
+import Book from './pages/Book'
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
         <Route path="/" element={<Layout><Home /></Layout>} />
 
         <Route path="/menu" element={<Layout><Menu /></Layout>} /> 
+
+        <Route path="/book" element={<Layout><Book /></Layout>} />
 
         <Route path="/category/:categoryId" element={<Layout><Category /></Layout>} />
 
