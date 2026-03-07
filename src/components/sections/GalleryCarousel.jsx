@@ -2,14 +2,14 @@ import { useState, useEffect, useRef } from "react"
 
 const portfolioItems = [
         {
-            src: "public/gallery/Drink_Line.PNG",
+            src: "/gallery/Drink_Line.PNG",
             label: "Line of cocktail drinks",
             headline: "Cocktails for any event.",
             description: 
                 "Professional bartending service designed to keep your celebration flowing all night.",
         },
         {
-            src: "public/gallery/Red_Drink.PNG",
+            src: "/gallery/Red_Drink.PNG",
             label: "Red Drink Showcase",
             headline: "Handcrafted cocktails for every guest.",
             description: 
