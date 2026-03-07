@@ -24,7 +24,7 @@ function Services() {
     ]
 
     return (
-        <section className="w-full py-20 px-6 bg-white">
+        <section className="w-full py-20 px-6 bg-white rounded-2xl">
 
             <div className="max-w-6x1 mx-auto space-y-12">
                 
