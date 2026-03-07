@@ -15,7 +15,7 @@ function Hero() {
                   playsInline
                   className="w-full h-full object-cover"
                 >
-                    <source src="hero/Drinks_Paranoma.mp4" type="video/mp4" />
+                    <source src="hero/Drinks_Paranoma_fixed.mp4" type="video/mp4" />
                 </video>
             </div>
 
